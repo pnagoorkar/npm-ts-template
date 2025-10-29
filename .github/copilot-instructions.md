@@ -70,7 +70,7 @@ This is a modern TypeScript npm package template designed to provide a productio
 - `tsconfig.json` - Main TypeScript configuration for building
 - `tsconfig.eslint.json` - TypeScript configuration for ESLint
 - Target: ES2020
-- Module: ESNext (ESM)
+- Module: ES2020 (ESM)
 - Strict mode enabled
 - Generate declaration files (.d.ts)
 
