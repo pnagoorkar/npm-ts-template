@@ -8,7 +8,7 @@ module.exports = {
     // ── core ──────────────────────────────────────────────
     preset: 'ts-jest',
     testEnvironment: 'node',
-    testMatch: ['**/tests/**/*.test.ts'],
+    testMatch: ['**/tests/**/*.spec.ts', '**/tests/**/*.test.ts'],
     transform: {
         ...tsJestTransformCfg,
     },
