@@ -1,17 +1,11 @@
-// jest.config.js (CommonJS)
-const { createDefaultPreset } = require('ts-jest');
-
-const tsJestTransformCfg = createDefaultPreset().transform;
+// jest.config.cjs (CommonJS)
 
 /** @type {import('jest').Config} */
 module.exports = {
     // ── core ──────────────────────────────────────────────
     preset: 'ts-jest',
     testEnvironment: 'node',
-    testMatch: ['**/tests/**/*.test.ts'],
-    transform: {
-        ...tsJestTransformCfg,
-    },
+    testMatch: ['**/tests/**/*.spec.ts', '**/tests/**/*.test.ts'],
 
     // ── coverage ──────────────────────────────────────────
     collectCoverage: true,                 // turn instrumentation on
