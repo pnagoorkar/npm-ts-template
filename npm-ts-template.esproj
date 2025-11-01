@@ -3,6 +3,18 @@
     <StartupCommand>npm run test:watch</StartupCommand>
     <JavaScriptTestRoot>tests/</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Available npm scripts -->
+    <ScriptCommands>
+      clean;
+      build;
+      test;
+      test:watch;
+      test:coverage;
+      lint;
+      lint:fix;
+      format;
+      format:check;
+    </ScriptCommands>
   </PropertyGroup>
   <ItemGroup>
     <None Include="**" Exclude="node_modules/**;dist/**;coverage/**;.git/**" />
