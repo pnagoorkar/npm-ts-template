@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.0">
   <PropertyGroup>
-    <StartupCommand>npm run build</StartupCommand>
+    <StartupCommand>npm run test:watch</StartupCommand>
     <JavaScriptTestRoot>tests/</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
