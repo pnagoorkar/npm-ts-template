@@ -12,7 +12,7 @@ A modern, production-ready TypeScript npm package template with ESM support, com
 - ✅ **Build**: Automated build process with TypeScript compiler
 - ✅ **Coverage**: Code coverage reporting with thresholds
 - ✅ **CI/CD Ready**: Pre-configured scripts for continuous integration
-- ✅ **Visual Studio**: Includes .esproj file for Visual Studio IDE integration
+- ✅ **Visual Studio**: Includes package.esproj file for Visual Studio IDE integration
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ A modern, production-ready TypeScript npm package template with ESM support, com
 3. Update `package.json`:
    - Change `name` from `REPLACE_ME` to your package name
    - Update `version`, `description`, `author`, and `keywords`
-   - Update repository URLs
+   - Update repository URLs   
 4. Install dependencies: `npm install`
 5. Start developing!
 
@@ -74,7 +74,7 @@ npm run clean
 ├── eslint.config.js        # ESLint configuration
 ├── jest.config.cjs         # Jest configuration
 ├── tsconfig.json           # TypeScript configuration
-├── npm-ts-template.esproj  # Visual Studio project file
+├── package.esproj          # Visual Studio project file
 ├── package.json            # Package manifest
 ├── LICENSE                 # MIT License
 └── README.md               # This file
@@ -99,7 +99,7 @@ The `prepublishOnly` script automatically runs linting, formatting checks, tests
 
 ## Visual Studio Integration
 
-This template includes a `.esproj` file for seamless integration with Visual Studio. When opening the project in Visual Studio:
+This template includes a `package.esproj` file for seamless integration with Visual Studio. When opening the project in Visual Studio:
 
 - The IDE will automatically recognize the project structure
 - npm scripts are available in the Task Runner
