@@ -12,6 +12,7 @@ A modern, production-ready TypeScript npm package template with ESM support, com
 - ✅ **Build**: Automated build process with TypeScript compiler
 - ✅ **Coverage**: Code coverage reporting with thresholds
 - ✅ **CI/CD Ready**: Pre-configured scripts for continuous integration
+- ✅ **Visual Studio**: Includes package.esproj file for Visual Studio IDE integration
 
 ## Getting Started
 
@@ -22,7 +23,7 @@ A modern, production-ready TypeScript npm package template with ESM support, com
 3. Update `package.json`:
    - Change `name` from `REPLACE_ME` to your package name
    - Update `version`, `description`, `author`, and `keywords`
-   - Update repository URLs
+   - Update repository URLs   
 4. Install dependencies: `npm install`
 5. Start developing!
 
@@ -61,21 +62,22 @@ npm run clean
 
 ```
 .
-├── src/              # Source files
-│   └── index.ts      # Main entry point
-├── tests/            # Test files
-│   └── index.spec.ts # Example test
-├── dist/             # Build output (generated)
-├── coverage/         # Coverage reports (generated)
-├── .gitignore        # Git ignore rules
-├── .prettierrc.json  # Prettier configuration
-├── .prettierignore   # Prettier ignore rules
-├── eslint.config.js  # ESLint configuration
-├── jest.config.cjs   # Jest configuration
-├── tsconfig.json     # TypeScript configuration
-├── package.json      # Package manifest
-├── LICENSE           # MIT License
-└── README.md         # This file
+├── src/                    # Source files
+│   └── index.ts            # Main entry point
+├── tests/                  # Test files
+│   └── index.spec.ts       # Example test
+├── dist/                   # Build output (generated)
+├── coverage/               # Coverage reports (generated)
+├── .gitignore              # Git ignore rules
+├── .prettierrc.json        # Prettier configuration
+├── .prettierignore         # Prettier ignore rules
+├── eslint.config.js        # ESLint configuration
+├── jest.config.cjs         # Jest configuration
+├── tsconfig.json           # TypeScript configuration
+├── package.esproj          # Visual Studio project file
+├── package.json            # Package manifest
+├── LICENSE                 # MIT License
+└── README.md               # This file
 ```
 
 ## Publishing to NPM
@@ -94,6 +96,28 @@ npm publish
 ```
 
 The `prepublishOnly` script automatically runs linting, formatting checks, tests, and build before publishing.
+
+## Visual Studio Integration
+
+This template includes a `package.esproj` file for seamless integration with Visual Studio. When opening the project in Visual Studio:
+
+- The IDE will automatically recognize the project structure
+- npm scripts are available in the Task Runner
+- Jest tests are integrated with the Test Explorer
+- Startup command is set to `npm run test:watch` for continuous feedback
+
+### Available Commands in Visual Studio
+
+All npm scripts from `package.json` are available:
+- `clean` - Remove build artifacts
+- `build` - Build the project
+- `test` - Run tests once
+- `test:watch` - Run tests in watch mode
+- `test:coverage` - Run tests with coverage report
+- `lint` - Lint source code
+- `lint:fix` - Lint and auto-fix issues
+- `format` - Format code with Prettier
+- `format:check` - Check code formatting
 
 ## Configuration
 
